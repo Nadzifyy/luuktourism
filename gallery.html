@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqs5uPsagkNSZRj0iFrOvCdj-tiLJcf88&libraries=places,directions&callback=initMap" async defer></script>
+    <script src="js/script.js" defer></script>
+    <style>
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        /* Basic reset */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            margin-bottom: 10px;
+            transition: border 0.3s;
+        }
+
+        .gallery img:hover {
+            border-color: #333;
+        }
+
+        #map {
+            height: 500px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #distance {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        #directions-panel {
+            font-size: 1em;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="destinations.html"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+		<li><a href="delicacies.html"><i class="fas fa-utensils"></i> Local Delicacies</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+		<li><a href="dictionary.html"><i class="fas fa-book"></i> Dictionary</a></li>
+                <li><a href="contact.php"><i class="fas fa-envelope"></i> Contact</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Explore Luuk, Sulu</h2>
+            <div id="map"></div>
+            <div id="distance"></div>
+            <div id="directions-panel"></div>
+
+            <div class="gallery">
+                <!-- Include latitude and longitude as data attributes -->
+                <img src="images/man's.jpg" alt="Luuk Sulu Image 1" data-lat="6.002392519103699" data-lng="121.32232456546761">
+                <img src="images/sucuban.jpg" alt="Sucuban" data-lat="5.921792222983142" data-lng="121.37045398333417">
+                <img src="images/gallery3.jpg" alt="Luuk Sulu Image 3" data-lat="5.9750" data-lng="121.2900">
+                <img src="images/gallery4.jpg" alt="Luuk Sulu Image 4" data-lat="5.9800" data-lng="121.2950">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tourism Navigation System</p>
+    </footer>
+</body>
+</html>

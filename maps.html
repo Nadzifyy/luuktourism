@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps and Directions</title>
+    <link rel="stylesheet" href="css/style.css">
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Maps and Directions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Interactive Map</h2>
+            <button id="locateBtn">Locate Me</button>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+            <div id="distance" style="margin-top: 10px;"></div>
+            <p>Use the map above to navigate through Luuk, Sulu's featured tourist destinations.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tourism Navigation System</p>
+    </footer>
+
+    <!-- Include Google Maps JavaScript API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqs5uPsagkNSZRj0iFrOvCdj-tiLJcf88&callback=initMap"></script>
+</body>
+</html>
